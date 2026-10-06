@@ -1,0 +1,6 @@
+features,model,MAE,WAPE %
+past-only features,ridge,25.46,18.62
+past-only features,xgboost,26.54,19.42
+LEAKY centered rolling mean,ridge,15.73,11.51
+LEAKY centered rolling mean,xgboost,17.7,12.95
+(reference),seasonal_naive,35.22,25.77

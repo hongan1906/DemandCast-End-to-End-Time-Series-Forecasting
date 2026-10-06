@@ -138,4 +138,3 @@ src/demandcast/   data, metrics, features, windows, validation, models, lstm, ex
 tests/            metrics, window alignment, leakage, fold ordering
 reports/          CSV tables and PNG figures written by each stage
 ```
-

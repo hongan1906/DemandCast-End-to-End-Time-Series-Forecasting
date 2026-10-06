@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demandcast"
+version = "0.1.0"
+description = "From naive forecast to machine learning: walk-forward demand forecasting"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "scikit-learn", "xgboost", "matplotlib"]
+
+[project.optional-dependencies]
+catboost = ["catboost"]
+lstm = ["torch"]
+dev = ["pytest"]
+all = ["catboost", "torch", "pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
